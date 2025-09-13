@@ -9,3 +9,43 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+/* Estilos del semáforo */
+.traffic-light {
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    width: 120px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.3;
+}
+
+.light.red {
+    background-color: red;
+}
+
+.light.yellow {
+    background-color: yellow;
+}
+
+.light.green {
+    background-color: green;
+}
+
+/* Cuando una luz está seleccionada, brilla */
+.light.selected {
+    opacity: 1;
+    box-shadow: 0 0 20px currentColor;
+}
